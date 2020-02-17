@@ -1,1 +1,2 @@
 14-15-Feb-2020 - Deployed the project, adjusted Bootstrap 4 (4h)
+17-Feb-2020 - Header layout, navbar animations (3h)
