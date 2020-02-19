@@ -47,7 +47,7 @@ body,
 		padding-top:141px;
 	}
 	@include media("<phone") {
-		padding-top:110px;
+		padding-top:78px;
 	}
 }
 .header,
@@ -90,7 +90,9 @@ body,
 		top:-6px;
 	}
 	@include media("<phone") {
-		top:-2px;
+		z-index:2;
+		top:-10px;
+		overflow:hidden;
 	}
 	img{
 		@include media("<desktop") {
@@ -98,12 +100,19 @@ body,
 		}
 		@include media("<phone") {
 			width:156px;
+			margin-left:-93px;
 		}
 	}
 }
 .header-bar{
 	@extend %clearfix;
 	text-align:right;
+	@include media("<phone") {
+		position:relative;
+		z-index:2;
+		padding:4px 0 0 70px;
+		text-align:left;
+	}
 	.phone-link{
 		float:right;
 		@include media("<desktop") {
@@ -145,6 +154,7 @@ body,
 	}
 }
 .navbar-toggler{
+	z-index:3;
 	width:40px;
 	height:40px;
 	margin:0 0 14px;
@@ -153,7 +163,7 @@ body,
 	line-height:0;
 	cursor:pointer;
 	@include media("<phone") {
-		margin:0 0 7px;
+		margin:0 0 17px;
 	}
 	&:not(.collapsed) {
 		.navbar-toggler-icon{
@@ -212,6 +222,10 @@ body,
 		justify-content:flex-end;
 		padding:0 4px;
 	}
+	@include media("<phone") {
+		margin:-57px 0 0;
+		padding:11px 4px 0;
+	}
 	.navbar-collapse{
 		justify-content:flex-end;
 		@include media("≥desktop") {
@@ -219,9 +233,13 @@ body,
 		}
 		@include media("<desktop") {
 			max-height:calc(100vh - 142px);
-			margin:0 -7px;
+			margin:0 -7px 0 -18px;
 			border-top:1px solid #2a2a2a;
 			box-shadow:0 1px 0 rgba(255, 255, 255, .1) inset;
+		}
+		@include media("<phone") {
+			max-height:calc(100vh - 79px);
+			margin:0 -19px;
 		}
 		&.show{
 			@include media("<desktop") {
@@ -253,7 +271,7 @@ body,
 			}
 			.dropdown-inner-frame{
 				@include media("≥desktop") {
-					max-height:1200px;
+					max-height:120vh;
 				}
 			}
 		}

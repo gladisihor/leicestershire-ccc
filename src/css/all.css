@@ -7709,7 +7709,7 @@ body,
       padding-top: 141px; } }
   @media (max-width: 479px) {
     .wrapper {
-      padding-top: 110px; } }
+      padding-top: 78px; } }
 
 .header,
 .footer {
@@ -7752,16 +7752,25 @@ body,
       top: -6px; } }
   @media (max-width: 479px) {
     .logo {
-      top: -2px; } }
+      z-index: 2;
+      top: -10px;
+      overflow: hidden; } }
   @media (max-width: 991px) {
     .logo img {
       width: 200px; } }
   @media (max-width: 479px) {
     .logo img {
-      width: 156px; } }
+      width: 156px;
+      margin-left: -93px; } }
 
 .header-bar {
   text-align: right; }
+  @media (max-width: 479px) {
+    .header-bar {
+      position: relative;
+      z-index: 2;
+      padding: 4px 0 0 70px;
+      text-align: left; } }
   .header-bar .phone-link {
     float: right; }
     @media (max-width: 991px) {
@@ -7798,6 +7807,7 @@ body,
           padding-bottom: 6px; } }
 
 .navbar-toggler {
+  z-index: 3;
   width: 40px;
   height: 40px;
   margin: 0 0 14px;
@@ -7807,7 +7817,7 @@ body,
   cursor: pointer; }
   @media (max-width: 479px) {
     .navbar-toggler {
-      margin: 0 0 7px; } }
+      margin: 0 0 17px; } }
   .navbar-toggler:not(.collapsed) .navbar-toggler-icon span {
     opacity: 0; }
   .navbar-toggler:not(.collapsed) .navbar-toggler-icon span, .navbar-toggler:not(.collapsed) .navbar-toggler-icon:before, .navbar-toggler:not(.collapsed) .navbar-toggler-icon:after {
@@ -7852,6 +7862,10 @@ body,
       -ms-flex-pack: end;
       justify-content: flex-end;
       padding: 0 4px; } }
+  @media (max-width: 479px) {
+    .navbar {
+      margin: -57px 0 0;
+      padding: 11px 4px 0; } }
   .navbar .navbar-collapse {
     -ms-flex-pack: end;
     justify-content: flex-end; }
@@ -7861,9 +7875,13 @@ body,
     @media (max-width: 991px) {
       .navbar .navbar-collapse {
         max-height: calc(100vh - 142px);
-        margin: 0 -7px;
+        margin: 0 -7px 0 -18px;
         border-top: 1px solid #2a2a2a;
         box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset; } }
+    @media (max-width: 479px) {
+      .navbar .navbar-collapse {
+        max-height: calc(100vh - 79px);
+        margin: 0 -19px; } }
     @media (max-width: 991px) {
       .navbar .navbar-collapse.show {
         overflow: auto; } }
@@ -7879,7 +7897,7 @@ body,
       pointer-events: auto; } }
   @media (min-width: 992px) {
     .navbar .nav-item:hover .dropdown-inner-frame {
-      max-height: 1200px; } }
+      max-height: 120vh; } }
   @media (min-width: 992px) {
     .navbar .nav-item.dropdown .nav-link:after {
       position: absolute;
