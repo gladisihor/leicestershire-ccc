@@ -7726,6 +7726,7 @@ body,
 
 .header {
   position: fixed;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
@@ -8047,6 +8048,8 @@ body,
 
 .main {
   -ms-flex-positive: 1;
-  flex-grow: 1; }
+  flex-grow: 1;
+  position: relative;
+  z-index: 1; }
 
 /*# sourceMappingURL=all.css.map */
