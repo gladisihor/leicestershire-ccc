@@ -3,3 +3,4 @@
 18-Feb-2020 - Header section has been stylized (4h)
 19-Feb-2020 - Header update (0.5h)
             - Footer content was added and prettified (1h)
+20-Feb-2020 - Prettified project structure, common typographic styles, footer content (0.5h)

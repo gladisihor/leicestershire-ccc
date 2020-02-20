@@ -31,7 +31,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Roboto Condensed", Arial, Helvetica, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -50,7 +50,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -4590,7 +4590,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4675,7 +4675,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7689,49 +7689,14 @@ a.text-dark:hover, a.text-dark:focus {
   /* 2 */
   overflow: hidden; }
 
-a,
-button {
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-
-html,
-body,
-.wrapper {
-  height: 100%; }
-
-.wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 146px; }
-  @media (max-width: 991px) {
-    .wrapper {
-      padding-top: 141px; } }
-  @media (max-width: 479px) {
-    .wrapper {
-      padding-top: 78px; } }
-
-.header,
-.footer {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: #fff;
-  background: #494949; }
-  .header a,
-  .footer a {
-    color: #fff; }
-    .header a:hover,
-    .footer a:hover {
-      color: #e42313; }
-
 .header {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   left: 0;
   top: 0;
   width: 100%;
   padding: 26px 0 24px;
-  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
   border-top: 5px solid #e30513;
   box-shadow: 1px 1px 3px #222; }
   @media (max-width: 991px) {
@@ -8045,6 +8010,50 @@ body,
               color: #e42313; } }
         .navbar .dropdown-holder .more a:before {
           display: none; }
+
+.footer {
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  line-height: 17px; }
+
+a,
+button {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+
+html {
+  font-size: 20px; }
+
+html,
+body,
+.wrapper {
+  height: 100%; }
+
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 146px; }
+  @media (max-width: 991px) {
+    .wrapper {
+      padding-top: 141px; } }
+  @media (max-width: 479px) {
+    .wrapper {
+      padding-top: 78px; } }
+
+.header,
+.footer {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: #fff;
+  background: #494949; }
+  .header a,
+  .footer a {
+    color: #fff; }
+    .header a:hover,
+    .footer a:hover {
+      color: #e42313; }
 
 .main {
   -ms-flex-positive: 1;
