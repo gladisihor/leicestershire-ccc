@@ -7672,7 +7672,7 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.header-bar .social-networks, .navbar .dropdown-holder, .navbar .dropdown-holder ul {
+.header-bar .social-networks, .navbar .dropdown-holder, .navbar .dropdown-holder ul, .footer .entries {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -8014,8 +8014,80 @@ a.text-dark:hover, a.text-dark:focus {
 .footer {
   position: relative;
   z-index: 2;
+  padding: 35px 0 11px;
   font-size: 14px;
-  line-height: 17px; }
+  line-height: 20px;
+  color: #fff; }
+  .footer .container {
+    padding: 0; }
+  @media (max-width: 767px) {
+    .footer .widget {
+      padding-bottom: 40px; } }
+  .footer h4 {
+    margin: 0 0 37px;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase; }
+  .footer address {
+    margin: 0 0 10px; }
+  .footer .form-control {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555; }
+    .footer .form-control::-webkit-input-placeholder {
+      color: #999;
+      opacity: 1; }
+    .footer .form-control::-moz-placeholder {
+      opacity: 1;
+      color: #999;
+      opacity: 1; }
+    .footer .form-control:-moz-placeholder {
+      color: #999;
+      opacity: 1; }
+    .footer .form-control:-ms-input-placeholder {
+      color: #999;
+      opacity: 1; }
+    .footer .form-control.placeholder {
+      color: #999;
+      opacity: 1; }
+  .footer .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 20px; }
+    .footer .btn.btn-primary {
+      background: #e30513; }
+  .footer .social-links {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 20px 0 0;
+    font-size: 24px;
+    line-height: 24px;
+    -ms-flex-align: baseline;
+    align-items: baseline; }
+    .footer .social-links .widget-title {
+      font-size: 18px;
+      font-weight: bold; }
+
+.footer-top {
+  padding: 0 36px 20px; }
+  @media (max-width: 767px) {
+    .footer-top {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.footer-bottom {
+  padding: 11px 28px 0;
+  border-top: 1px solid #000; }
+  @media (max-width: 767px) {
+    .footer-bottom {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 a,
 button {

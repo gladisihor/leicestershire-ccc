@@ -37,7 +37,6 @@ var path = {
     distFolderCont: './dist/*',
     cssDist: './dist/css/',
     jsDist: './dist/js/',
-    mainJsDist: './dist/js/bundle.js',
     mainJsPath: 'js/bundle.js',
     imagesDist: './dist/images/',
     svgFontDist: './dist/fonts/',
@@ -221,41 +220,18 @@ gulp.task('minify:css', function () {
         .pipe(gulp.dest(path.cssDist));
 });
 
-/* babel */
-gulp.task('babel', function() {
-    return gulp.src(path.js + mainJQuery)
-        .pipe(babel({
-            presets: [
-                ['env', {
-                    'targets': {'browsers': ['last 2 versions']}
-                }]
-            ],
-            plugins: [
-                'transform-object-rest-spread', // resolve spread operators
-            ]
-        }))
-        .pipe(gulp.dest(path.jsDist));
-});
-
 /* minify js */
-gulp.task('uglify:js', ['babel'], function() {
-    return gulp.src(path.watch.jsDist)
+gulp.task('uglify:js', function() {
+    return gulp.src(path.watch.js)
         .pipe(uglify())
         .pipe(gulp.dest(path.jsDist));
 });
 
 /* prettify js */
-gulp.task('jsprettify', ['babel'], function() {
-    return gulp.src(path.watch.jsDist)
+gulp.task('prettify:js', function() {
+    return gulp.src(path.watch.js)
         .pipe(jsprettify())
         .pipe(gulp.dest(path.jsDist));
-});
-
-gulp.task('prettify:js', ['jsprettify'], function() {
-    return gulp.src([path.watch.jsDist, '!' + path.mainJsDist], {
-        read: false,
-        force: true
-    }).pipe(clean());
 });
 gulp.task('prettify:srcjs', function() {
     gulp.src(path.js + mainJQuery)

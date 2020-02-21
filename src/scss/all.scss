@@ -32,7 +32,7 @@ $media-expressions:(
 
 a,
 button{
-	transition:color $animation-speed $animation-effect,
+	transition: color $animation-speed $animation-effect,
 				background-color $animation-speed $animation-effect,
 				border-color $animation-speed $animation-effect,
 				box-shadow $animation-speed $animation-effect;

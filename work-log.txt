@@ -4,3 +4,4 @@
 19-Feb-2020 - Header update (0.5h)
             - Footer content was added and prettified (1h)
 20-Feb-2020 - Prettified project structure, common typographic styles, footer content (0.5h)
+21-Feb-2020 - DIST compilation process has been adjusted; footer has been stylized and added schema format for address fields (3h)
