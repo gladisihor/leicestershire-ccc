@@ -204,6 +204,7 @@
 			.dropdown-menu{
 				@include media("≥desktop") {
 					pointer-events:auto;
+					z-index:11;
 				}
 			}
 			.dropdown-inner-frame{
