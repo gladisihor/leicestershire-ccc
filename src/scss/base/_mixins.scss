@@ -90,6 +90,19 @@
   height: $height;
 }
 
+@mixin arrow-item($arrow-size: 10px, $color: $primary) {
+  position:absolute;
+  content:"";
+  left:50%;
+  top:0;
+  width:$arrow-size * 2;
+  height:$arrow-size;
+  margin-left:-$arrow-size;
+  border:solid transparent;
+  border-width:$arrow-size $arrow-size 0;
+  border-color:$primary transparent;
+}
+
 /// font-smothing
 /// font-smoothing(on);
 /// @include font-smoothing(off);

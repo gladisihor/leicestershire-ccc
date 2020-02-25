@@ -6695,7 +6695,8 @@ a.text-dark:focus {
 .header-bar .social-networks,
 .navbar .dropdown-holder,
 .navbar .dropdown-holder ul,
-.footer .entries {
+.footer .entries,
+.sponsors-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -7277,11 +7278,81 @@ body,
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: bold;
-	transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: transform 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.banners-list {
+	margin: 0 -6px;
+}
+
+.banners-list .banner {
+	padding: 6px;
+}
+
+.banners-list a {
+	display: block;
+	height: auto;
+	max-height: 187px;
+	overflow: hidden;
+	color: #fff;
+}
+
+.banners-list a:hover {
+	color: #e30513;
+}
+
+.banners-list a:hover h3 {
+	background: #000;
+}
+
+.banners-list a:hover h3:before {
+	border-color: #000 transparent;
+}
+
+.banners-list a:hover img {
+	filter: grayscale(0);
+}
+
+.banners-list h3 {
+	position: relative;
+	margin: 0 0 2px;
+	padding: 2px 0;
+	font-size: 14px;
+	line-height: 22px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	background: #e42313;
+	transition: background-color 0.5s;
+}
+
+.banners-list h3:before {
+	position: absolute;
+	content: "";
+	left: 50%;
+	top: 0;
+	width: 20px;
+	height: 10px;
+	margin-left: -10px;
+	border: solid transparent;
+	border-width: 10px 10px 0;
+	border-color: #e42313 transparent;
+	z-index: 2;
+	top: 100%;
+	transition: border-color 0.5s;
+}
+
+.banners-list img {
+	display: block;
+	width: 100%;
+	height: auto;
+	filter: grayscale(100%);
+	transition: filter 0.5s;
 }
 
 .sponsors {
 	position: relative;
+	text-align: center;
 	border-top: 5px solid #e42313;
 }
 
@@ -7296,6 +7367,49 @@ body,
 	border: solid transparent;
 	border-width: 25px 25px 0;
 	border-color: #e42313 transparent;
+}
+
+.sponsors h1 {
+	margin: 0 0 50px;
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.sponsors-list {
+	padding-bottom: 50px;
+	font-size: 0;
+	line-height: 0;
+}
+
+.sponsors-list:last-child {
+	padding-bottom: 0;
+}
+
+.sponsors-list.secondary img {
+	filter: grayscale(100%);
+	transition: filter 0.2s;
+}
+
+.sponsors-list.secondary img:hover {
+	filter: grayscale(0);
+}
+
+.sponsors-list li {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 228px;
+	padding: 0 6px 10px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.sponsors-list img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	height: auto;
 }
 
 /*# sourceMappingURL=all.css.map */
