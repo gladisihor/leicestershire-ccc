@@ -7163,6 +7163,16 @@ body,
 	width: 90%;
 }
 
+.sidebar {
+	padding-top: 20px;
+}
+
+.twitter-holder {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
 .decor-link {
 	position: relative;
 	color: #922f2f;
