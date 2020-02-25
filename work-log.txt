@@ -10,3 +10,5 @@
 23-Feb-2020 - Stylized Hero slider;
 	    - Created main page layout (1.5h)
 24-Feb-2020 - News section markup: implemented common layout, added schema.org example (2h)
+24-Feb-2020 - News list has been stylized;
+            - Created content for banners row (1.5h)

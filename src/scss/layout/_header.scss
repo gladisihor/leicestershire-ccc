@@ -14,6 +14,9 @@
 	@include media("<phone") {
 		padding:5px 0 0;
 	}
+	.container{
+		position:relative;
+	}
 }
 .logo{
 	position:absolute;
