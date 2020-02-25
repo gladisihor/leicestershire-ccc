@@ -10724,7 +10724,7 @@ body,
 
 	.navbar .nav-item.dropdown .nav-link:after {
 		position: absolute;
-		z-index: 11;
+		z-index: 12;
 		content: "";
 		left: 50%;
 		top: 100%;

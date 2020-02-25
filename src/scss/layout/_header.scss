@@ -217,7 +217,7 @@
 			.nav-link:after{
 				@include media("≥desktop") {
 					position:absolute;
-					z-index:11;
+					z-index:12;
 					content:"";
 					left:50%;
 					top:100%;
