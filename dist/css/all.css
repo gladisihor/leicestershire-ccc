@@ -6740,6 +6740,10 @@ a.text-dark:focus {
 	top: -13px;
 }
 
+.logo img {
+	max-width: none;
+}
+
 .header-bar {
 	text-align: right;
 }
