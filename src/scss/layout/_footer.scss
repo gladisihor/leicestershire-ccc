@@ -42,6 +42,9 @@
         line-height:20px;
         &.btn-primary{
             background:$brand-color-alt;
+            &:hover{
+                background:$link-hover-color;
+            }
         }
     }
     .social-links{

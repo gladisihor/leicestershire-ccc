@@ -2379,9 +2379,9 @@ fieldset:disabled a.btn {
   border-radius: 0.3rem; }
 
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  line-height: 18px;
   border-radius: 0.2rem; }
 
 .btn-block {
@@ -2672,8 +2672,8 @@ input[type="button"].btn-block {
     margin-right: 0; }
 
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
-  padding-right: 0.375rem;
-  padding-left: 0.375rem; }
+  padding-right: 7.5px;
+  padding-left: 7.5px; }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
@@ -8061,6 +8061,8 @@ a.text-dark:hover, a.text-dark:focus {
     line-height: 20px; }
     .footer .btn.btn-primary {
       background: #e30513; }
+      .footer .btn.btn-primary:hover {
+        background: #9d180d; }
   .footer .social-links {
     display: -ms-flexbox;
     display: flex;
@@ -8155,12 +8157,29 @@ body,
     line-height: 58px;
     font-weight: bold;
     color: #e42313; }
+    @media (max-width: 991px) {
+      .main h1 {
+        font-size: 40px;
+        line-height: 46px; } }
+    @media (max-width: 767px) {
+      .main h1 {
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 34px; } }
   .main h2 {
     margin: 0 0 10px;
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
     color: #e42313; }
+    @media (max-width: 991px) {
+      .main h2 {
+        font-size: 29px;
+        line-height: 32px; } }
+    @media (max-width: 767px) {
+      .main h2 {
+        font-size: 27px;
+        line-height: 30px; } }
   .main p {
     margin: 0 0 10px;
     font-weight: 300; }
@@ -8173,20 +8192,167 @@ body,
     list-style: none;
     font-size: 17px;
     line-height: 20px; }
-    .main ul li {
+    .main ul > li {
       padding: 0 0 4px;
       font-weight: 300; }
-      .main ul li:before {
+      .main ul > li:before {
         position: absolute;
         content: "\2022";
         left: 0;
         font-size: 1.647em; }
+  .main hr {
+    border-color: #f00; }
+  .main .articles-list {
+    padding: 0; }
+    .main .articles-list > li {
+      padding: 24px 0 10px;
+      border-top: 1px solid #e42313; }
+      .main .articles-list > li:first-child {
+        padding-top: 0;
+        border: 0; }
+      .main .articles-list > li:before {
+        display: none; }
+    .main .articles-list a {
+      display: block; }
+      .main .articles-list a:hover h4 {
+        color: #e42313; }
+    .main .articles-list img {
+      margin: 0 0 10px; }
+    .main .articles-list h4 {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 500;
+      color: #000;
+      transition: color 0.15s ease-in-out; }
+  .main .filters {
+    margin: 0 -5px;
+    padding: 0 0 25px; }
+    .main .filters > li {
+      padding: 0 5px 10px; }
+      .main .filters > li:before {
+        display: none; }
+    .main .filters .btn.btn-sm, .main .filters .btn-group-sm > .btn {
+      font: 12px/18px Arial, Helvetica, sans-serif; }
+  .main .pagination {
+    padding: 0; }
+    .main .pagination > li {
+      padding: 0; }
+      .main .pagination > li:before {
+        display: none; }
+    .main .pagination .page-link {
+      padding: 5px 10px;
+      font: 12px/18px Arial, Helvetica, sans-serif; }
+    .main .pagination span.page-link {
+      background: #fff; }
+
+.page-header {
+  margin: 0 0 20px;
+  padding: 0 0 19px;
+  border-bottom: 1px solid #eee; }
+  .page-header h1 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 500;
+    color: inherit; }
+    .page-header h1 small {
+      font-size: 65%;
+      line-height: 1;
+      color: #777; }
+
+.news-list {
+  margin: 0 -6px 40px;
+  font: 14px/20px Arial, Helvetica, sans-serif; }
+  .news-list .news-item {
+    padding: 0 6px 20px; }
+  .news-list a {
+    display: block;
+    position: relative;
+    height: 153px;
+    overflow: hidden;
+    color: #fff; }
+    .news-list a:hover img {
+      opacity: 1; }
+    .news-list a:hover h3 {
+      background: #d3190f; }
+  .news-list img {
+    width: 100%;
+    opacity: 0.75;
+    transition: opacity 0.15s ease-in-out; }
+  .news-list .caption {
+    position: absolute;
+    left: 0;
+    top: 72px;
+    max-width: 100%; }
+  .news-list time {
+    float: left;
+    clear: both;
+    padding: 3px 6px;
+    text-transform: uppercase;
+    background: #d3190f; }
+  .news-list h3 {
+    float: left;
+    clear: both;
+    margin: 0;
+    padding: 6px;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    color: inherit;
+    background: rgba(0, 0, 0, 0.75);
+    transition: background-color 0.15s ease-in-out; }
+
+.article-img {
+  margin: 0 0 57px; }
+  @media (max-width: 767px) {
+    .article-img {
+      margin: 0 0 30px; } }
+  .article-img img {
+    width: 100%; }
+
+.article-badge {
+  margin: 2px 0 25px;
+  padding: 0 15px 0 6px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: right;
+  border: solid #e42313;
+  border-width: 0 1px 0 0; }
+  @media (max-width: 767px) {
+    .article-badge {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 0 5px;
+      text-align: left;
+      border-width: 0 0 1px; } }
+  .article-badge strong {
+    display: block; }
+  .article-badge time {
+    display: block;
+    color: #969696; }
 
 .list-limited {
   width: 90%; }
 
 .sidebar {
   padding-top: 20px; }
+  .sidebar h3 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+    color: #e42313;
+    text-transform: uppercase; }
+    @media (max-width: 991px) {
+      .sidebar h3 {
+        font-size: 29px;
+        line-height: 32px; } }
+    @media (max-width: 767px) {
+      .sidebar h3 {
+        font-size: 27px;
+        line-height: 30px; } }
 
 .twitter-holder {
   position: relative;
@@ -8200,11 +8366,8 @@ body,
   .decor-link:hover {
     color: #f00;
     box-shadow: 0 1px 0 #337ab7; }
-
-.article-img {
-  margin: 0 0 20px; }
-  .article-img img {
-    width: 100%; }
+  .decor-link.alt {
+    font-weight: inherit; }
 
 .section {
   padding: 65px 0; }

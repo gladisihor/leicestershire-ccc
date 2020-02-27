@@ -15,4 +15,9 @@ $container-max-widths: (
   xl: 1230px
 );
 
+$btn-padding-x-sm:10px;
+$btn-padding-y-sm:5px;
+$btn-font-size-sm: 12px;
+$btn-line-height-sm: 18px;
+
 @import "bootstrap/bootstrap.scss";

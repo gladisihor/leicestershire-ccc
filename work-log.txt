@@ -13,10 +13,13 @@
 25-Feb-2020 - News list has been stylized;
             - Created and stylized content for banners row
 	    - Created Article single page (3.5h)
+27-Feb-2020 - Created News single page;
+	    - Created news list;
+	    - Created 404 page  (3h)
 
 
 
 
 
 "Home page, news list and detail, article, player list and detail, maybe shop bits (there’s a basket and checkout shop home and common detail)"
-DONE: Home page.
+DONE: Home page, article, news list & single page, 404 page
