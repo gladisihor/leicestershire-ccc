@@ -16,6 +16,8 @@
 27-Feb-2020 - Created News single page;
 	    - Created news list;
 	    - Created 404 page  (3h)
+28-Feb-2020 - Created Player single page;
+	    - Created players list layout (1.5h)
 
 
 
