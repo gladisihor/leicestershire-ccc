@@ -2,7 +2,11 @@
 			<div class="container">
 				<strong class="logo">
 					<a href="#">
-						<img src="images/logo.png" alt="Leicestershire Country Cricket Club. Established 1879">
+						<picture alt="@@alt">
+							<source srcset="@@logosrcm, @@logosrcm 2x" media="(max-width: 479px)">
+							<source srcset="@@logosrcd, @@logosrcd 2x">
+							<img src="@@logosrcd" width="@@width" alt="@@alt">
+						</picture>
 					</a>
 				</strong>
 				<div class="header-bar">
@@ -22,7 +26,7 @@
 					</button>
 					<div class="collapse navbar-collapse" id="navbarNavDropdown">
 						<ul class="navbar-nav">
-							<li class="nav-item dropdown active">
+							<li class="nav-item dropdown">
 								<a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Tickets">Tickets</a>
 								<div class="dropdown-menu">
 									<div class="dropdown-inner-frame">

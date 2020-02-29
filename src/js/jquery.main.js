@@ -1,6 +1,22 @@
 jQuery(function() {
     initSwiperSlider();
+    initScrollHeader();
 });
+
+function initScrollHeader() {
+    var distance = 150;
+    var win = jQuery(window);
+    var header = jQuery('.header');
+    var scrollClass = 'compressed';
+
+    win.on('scroll load orientationchange', function() {
+        if (win.scrollTop() > distance) {
+            header.addClass(scrollClass);
+        } else {
+            header.removeClass(scrollClass);
+        }
+    });
+}
 
 function initSwiperSlider() {
     var swiper = new Swiper('.swiper-container', {

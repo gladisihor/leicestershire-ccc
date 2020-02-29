@@ -63,7 +63,7 @@ body,
 		padding-top:143px;
 	}
 	@include media("<phone") {
-		padding-top:81px;
+		padding-top:89px;
 	}
 }
 .container{
@@ -481,7 +481,7 @@ body,
 		padding:6px;
 		&.alt{
 			@include media("≥desktop") {
-				padding-bottom:1px;
+				padding-bottom:2px;
 			}
 		}
 		&.large{

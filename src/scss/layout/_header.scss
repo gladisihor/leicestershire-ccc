@@ -4,50 +4,84 @@
 	left:0;
 	top:0;
 	width:100%;
-	padding:25px 0 24px;
 	font-family:$font-family-sans-serif;
 	border-top:5px solid $brand-color-alt;
 	box-shadow:1px 1px 3px #222;
-	@include media("<desktop") {
-		padding:14px 0 0;
-	}
-	@include media("<phone") {
-		padding:5px 0 0;
+	&.compressed{
+		.container{
+			@include media("≥phone") {
+				padding-top:10px;
+				padding-bottom:0;
+			}
+			@include media("≥desktop") {
+				padding-top:25px;
+				padding-bottom:12px;
+			}
+		}
+		.logo{
+			transform:translateY(-50%) scale(0.6);
+		}
+		.header-bar{
+			margin-top:-21px;
+			opacity:0;
+			pointer-events:none;
+			@include media("≥phone") {
+				margin-top:-70px;
+			}
+			@include media("≥desktop") {
+				margin-top:-30px;
+			}
+		}
+		.navbar-toggler{
+			margin-bottom:4px;
+			@include media("≥phone") {
+				margin-bottom:10px;
+			}
+		}
+		.navbar{
+			@include media("≥phone") {
+				padding:0;
+			}
+		}
 	}
 	.container{
 		position:relative;
+		padding-top:25px;
+		padding-bottom:24px;
+		transition:padding-bottom $animation-speed $animation-effect;
+		@include media("<desktop") {
+			padding-top:14px;
+			padding-bottom:0;
+		}
+		@include media("<phone") {
+			padding-top:13px;
+		}
 	}
 }
 .logo{
 	position:absolute;
-	left:10px;
-	top:-13px;
+	top:50%;
+	transform:translateY(-50%);
+	transition:transform $animation-speed $animation-effect;
+	transform-origin:0 50%;
 	@include media("<desktop") {
-		top:-6px;
+		z-index:13;
+		width:200px;
 	}
 	@include media("<phone") {
 		z-index:2;
-		top:-10px;
+		width:63px;
 		overflow:hidden;
-	}
-	img{
-		max-width:none;
-		@include media("<desktop") {
-			width:200px;
-		}
-		@include media("<phone") {
-			width:156px;
-			margin-left:-93px;
-		}
 	}
 }
 .header-bar{
 	@extend %clearfix;
 	text-align:right;
+	transition:margin-top $animation-speed $animation-effect, opacity $animation-speed $animation-effect;
 	@include media("<phone") {
 		position:relative;
 		z-index:2;
-		padding:4px 0 0 70px;
+		padding:0 0 0 74px;
 		text-align:left;
 	}
 	.phone-link{
@@ -100,8 +134,9 @@
 	font-size:0;
 	line-height:0;
 	cursor:pointer;
+	transition:margin-bottom $animation-speed $animation-effect;
 	@include media("<phone") {
-		margin:0 0 17px;
+		margin:0 0 21px;
 	}
 	&:not(.collapsed) {
 		.navbar-toggler-icon{
@@ -153,10 +188,12 @@
 .navbar{
 	margin-right:-12px;
 	padding:28px 0 0;
+	transition:padding $animation-speed $animation-effect;
 	@include media("≥desktop") {
 		position:static;
 	}
 	@include media("<desktop") {
+		position:static;
 		justify-content:flex-end;
 		padding:0 4px;
 	}
@@ -170,14 +207,18 @@
 			position:static;
 		}
 		@include media("<desktop") {
+			position:absolute;
+			left:0;
+			top:100%;
+			width:100%;
 			max-height:calc(100vh - 142px);
-			margin:0 -7px 0 -18px;
+			margin:0;
 			border-top:1px solid #2a2a2a;
 			box-shadow:0 1px 0 rgba(255, 255, 255, .1) inset;
+			background:$gray-700;
 		}
 		@include media("<phone") {
 			max-height:calc(100vh - 79px);
-			margin:0 -19px;
 		}
 		&.show{
 			@include media("<desktop") {
@@ -214,6 +255,11 @@
 				}
 			}
 		}
+		&.active{
+			.nav-link{
+				color:$link-color;
+			}
+		}
 		&.dropdown{
 			.nav-link:after{
 				@include media("≥desktop") {
@@ -242,6 +288,9 @@
 		font-weight:500;
 		text-transform:uppercase;
 		border-left:1px solid $brand-color-alt;
+		@include media("<widescreen") {
+			padding:0 10px !important;
+		}
 		@include media("<desktop") {
 			padding:16px 5px !important;
 			font-size:16px;

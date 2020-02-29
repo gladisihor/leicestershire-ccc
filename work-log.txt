@@ -18,6 +18,8 @@
 	    - Created 404 page  (3h)
 28-Feb-2020 - Created Player single page;
 	    - Created players list layout (1.5h)
+29-Feb-2020 - Updated page logotype: different logos ability was added;
+	    - Implemented and stylized compressed header on scroll (2h)
 
 
 
@@ -25,3 +27,9 @@
 
 "Home page, news list and detail, article, player list and detail, maybe shop bits (there’s a basket and checkout shop home and common detail)"
 DONE: Home page, article, news list & single page, 404 page
+
+
+- logo fixes for Home page
+- Home page banners list bug
+- compress the header on scroll ( https://www.weareyoung.org.uk/index.html )
+- logo replacements ( whole, each of these: https://res.cloudinary.com/trentbridge/image/upload/f_auto,q_auto/v1579083059/crests/cc_2017.png )
