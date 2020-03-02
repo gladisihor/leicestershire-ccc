@@ -8160,14 +8160,7 @@ body,
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-  flex-direction: column;
-  padding-top: 146px; }
-  @media (max-width: 991px) {
-    .wrapper {
-      padding-top: 143px; } }
-  @media (max-width: 479px) {
-    .wrapper {
-      padding-top: 89px; } }
+  flex-direction: column; }
 
 .container {
   width: 1230px;
@@ -8189,8 +8182,17 @@ body,
 .main {
   -ms-flex-positive: 1;
   flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  padding-top: 146px; }
+  @media (max-width: 991px) {
+    .main {
+      padding-top: 143px; } }
+  @media (max-width: 479px) {
+    .main {
+      padding-top: 89px; } }
   .main h1 {
     margin: 0 0 30px;
     font-size: 50px;

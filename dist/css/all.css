@@ -7113,7 +7113,6 @@ body,
 	display: flex;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	padding-top: 146px;
 }
 
 .container {
@@ -7142,8 +7141,11 @@ body,
 .main {
 	-ms-flex-positive: 1;
 	flex-grow: 1;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
 	position: relative;
 	z-index: 1;
+	padding-top: 146px;
 }
 
 .main h1 {
@@ -12220,7 +12222,7 @@ body,
 		color: #e42313;
 	}
 
-	.wrapper {
+	.main {
 		padding-top: 143px;
 	}
 
@@ -12399,7 +12401,7 @@ body,
 		max-height: calc(100vh - 79px);
 	}
 
-	.wrapper {
+	.main {
 		padding-top: 89px;
 	}
 }
