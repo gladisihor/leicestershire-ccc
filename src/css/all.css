@@ -7707,7 +7707,7 @@ a.text-dark:hover, a.text-dark:focus {
       padding-top: 25px;
       padding-bottom: 12px; } }
   .header.compressed .logo {
-    transform: translateY(-50%) scale(0.6); }
+    transform: translateY(-50%) scale(0.55); }
   .header.compressed .header-bar {
     margin-top: -21px;
     opacity: 0;
@@ -8667,5 +8667,32 @@ body,
     margin: 0 auto; }
   .main .sponsors-list span {
     display: block; }
+
+.thumbnails-list {
+  margin: 0 -6px; }
+  .thumbnails-list div[class*="col"] {
+    padding: 0 6px 20px; }
+  .thumbnails-list .card {
+    padding: 4px;
+    color: #922f2f; }
+    .thumbnails-list .card:hover, .thumbnails-list .card:focus {
+      color: #f00;
+      outline: 0;
+      border-color: #e42313; }
+  .thumbnails-list .card-body {
+    padding: 0; }
+  .thumbnails-list img {
+    width: 100%;
+    margin-bottom: 20px; }
+  .thumbnails-list h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 500;
+    color: inherit; }
+    @media (max-width: 767px) {
+      .thumbnails-list h3 {
+        font-size: 18px;
+        line-height: 20px; } }
 
 /*# sourceMappingURL=all.css.map */

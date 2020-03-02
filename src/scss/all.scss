@@ -636,13 +636,37 @@ body,
 		display:block;
 	}
 }
-
-
-
-
-
-
-
-
-
-
+.thumbnails-list{
+	margin:0 -6px;
+	div[class*="col"]{
+		padding:0 6px 20px;
+	}
+	.card{
+		padding:4px;
+		color:$alt-link-color;
+		&:hover,
+		&:focus{
+			color:$alt-link-color-hover;
+			outline:0;
+			border-color:$link-color;
+		}
+	}
+	.card-body{
+		padding:0;
+	}
+	img{
+		width:100%;
+		margin-bottom:20px;
+	}
+	h3{
+		margin:0 0 10px;
+		font-size:24px;
+		line-height:26px;
+		font-weight:500;
+		color:inherit;
+		@include media("<tablet") {
+			font-size:18px;
+			line-height:20px;
+		}
+	}
+}
