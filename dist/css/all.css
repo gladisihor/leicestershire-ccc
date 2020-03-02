@@ -7011,6 +7011,7 @@ a.text-dark:focus {
 	font-size: 14px;
 	line-height: 20px;
 	color: #555;
+	border: 1px solid transparent;
 }
 
 .footer .form-control::-webkit-input-placeholder {
