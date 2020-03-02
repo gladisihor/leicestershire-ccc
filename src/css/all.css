@@ -7948,6 +7948,8 @@ a.text-dark:hover, a.text-dark:focus {
         left: 0;
         top: auto;
         width: 100%; } }
+    .navbar .dropdown.dropdown-wide .dropdown-holder {
+      overflow-x: auto; }
   .navbar .dropdown-menu {
     padding: 0;
     border: 0;
@@ -8169,7 +8171,7 @@ body,
 
 .container {
   width: 1230px;
-  max-width: 100%; }
+  max-width: 100% !important; }
 
 .header,
 .footer {
@@ -8669,7 +8671,7 @@ body,
     display: block; }
 
 .thumbnails-list {
-  margin: 0 -6px; }
+  margin: 0 -6px 30px; }
   .thumbnails-list div[class*="col"] {
     padding: 0 6px 20px; }
   .thumbnails-list .card {

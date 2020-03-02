@@ -68,7 +68,7 @@ body,
 }
 .container{
 	width:1230px;
-	max-width:100%;
+	max-width:100% !important;
 }
 .header,
 .footer{
@@ -637,7 +637,7 @@ body,
 	}
 }
 .thumbnails-list{
-	margin:0 -6px;
+	margin:0 -6px 30px;
 	div[class*="col"]{
 		padding:0 6px 20px;
 	}

@@ -6891,6 +6891,10 @@ a.text-dark:focus {
 	position: static;
 }
 
+.navbar .dropdown.dropdown-wide .dropdown-holder {
+	overflow-x: auto;
+}
+
 .navbar .dropdown-menu {
 	padding: 0;
 	border: 0;
@@ -7114,7 +7118,7 @@ body,
 
 .container {
 	width: 1230px;
-	max-width: 100%;
+	max-width: 100% !important;
 }
 
 .header,
@@ -7727,7 +7731,7 @@ body,
 }
 
 .thumbnails-list {
-	margin: 0 -6px;
+	margin: 0 -6px 30px;
 }
 
 .thumbnails-list div[class*="col"] {

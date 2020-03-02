@@ -14,14 +14,16 @@
             - Created and stylized content for banners row
 	    - Created Article single page (3.5h)
 27-Feb-2020 - Created News single page;
-	    - Created news list;
+	    - Created News list;
 	    - Created 404 page  (3h)
 28-Feb-2020 - Created Player single page;
-	    - Created players list layout (1.5h)
+	    - Created Players list layout (1.5h)
 29-Feb-2020 - Updated page logotype: different logos ability was added;
 	    - Implemented and stylized compressed header on scroll (2h)
-02-Mar-2020 - Players list has been stylized (0.5h)
-
+02-Mar-2020 - Players list has been stylized;
+	    - Self checking, small fixes (1h)
+__________________________________________________________________________________________
+TOTAL: 31
 
 
 
