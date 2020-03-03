@@ -19,7 +19,7 @@
 			}
 		}
 		.logo{
-			transform:translateY(-50%) scale(0.55);
+			transform:translateY(5px) scale(0.55);
 			// @include media("≥phone", "<desktop") {
 			// 	transform:translateY(-50%) scale(0.45);
 			// }
@@ -63,10 +63,10 @@
 }
 .logo{
 	position:absolute;
-	top:50%;
-	transform:translateY(-50%);
+	top:0;
+	transform:translateY(5px);
 	transition:transform $animation-speed $animation-effect;
-	transform-origin:0 50%;
+	transform-origin:0 0;
 	@include media("<desktop") {
 		z-index:13;
 		width:200px;
@@ -75,6 +75,7 @@
 		z-index:2;
 		width:63px;
 		overflow:hidden;
+		margin-left:-4px;
 	}
 }
 .header-bar{
@@ -84,7 +85,7 @@
 	@include media("<phone") {
 		position:relative;
 		z-index:2;
-		padding:0 0 0 74px;
+		padding:0 0 0 72px;
 		text-align:left;
 	}
 	.phone-link{
