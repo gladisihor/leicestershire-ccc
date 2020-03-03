@@ -60,7 +60,7 @@ body,
 	flex-direction:column;
 }
 .container{
-	width:1230px;
+	width:1470px;
 	max-width:100% !important;
 }
 .header,
@@ -360,6 +360,17 @@ body,
 	}
 	&.alt{
 		background:$gray-300;
+	}
+	&.fixtures{
+		padding:70px 0 80px;
+		color:#fff;
+		background:#d6000c;
+		@include media("<desktop") {
+			padding:50px 0;
+		}
+	}
+	@include media("<tablet") {
+		padding:30px 0;
 	}
 }
 .bg-holder{

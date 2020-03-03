@@ -7117,7 +7117,7 @@ body,
 }
 
 .container {
-	width: 1230px;
+	width: 1470px;
 	max-width: 100% !important;
 }
 
@@ -7428,6 +7428,12 @@ body,
 
 .section.alt {
 	background: #dcdcdc;
+}
+
+.section.fixtures {
+	padding: 70px 0 80px;
+	color: #fff;
+	background: #d6000c;
 }
 
 .bg-holder {
@@ -12246,6 +12252,10 @@ body,
 		padding: 50px 0;
 	}
 
+	.section.fixtures {
+		padding: 50px 0;
+	}
+
 	.hero-slider .hero-slide {
 		height: calc(100vh - 50px);
 		max-height: 600px;
@@ -12320,6 +12330,10 @@ body,
 	.sidebar h3 {
 		font-size: 27px;
 		line-height: 30px;
+	}
+
+	.section {
+		padding: 30px 0;
 	}
 
 	.section {

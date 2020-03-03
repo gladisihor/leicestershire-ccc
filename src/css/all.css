@@ -8165,7 +8165,7 @@ body,
   flex-direction: column; }
 
 .container {
-  width: 1230px;
+  width: 1470px;
   max-width: 100% !important; }
 
 .header,
@@ -8423,6 +8423,16 @@ body,
       padding: 30px 0; } }
   .section.alt {
     background: #dcdcdc; }
+  .section.fixtures {
+    padding: 70px 0 80px;
+    color: #fff;
+    background: #d6000c; }
+    @media (max-width: 991px) {
+      .section.fixtures {
+        padding: 50px 0; } }
+  @media (max-width: 767px) {
+    .section {
+      padding: 30px 0; } }
 
 .bg-holder {
   position: absolute;
