@@ -22,7 +22,8 @@
 	    - Implemented and stylized compressed header on scroll (2h)
 02-Mar-2020 - Players list has been stylized;
 	    - Self checking, small fixes (1h)
-04-Mar-2020 - Added fixtures section layout (0.5h)
+04-Mar-2020 - Added fixtures section layout;
+	    - Stylized fixtures section (1h)
 __________________________________________________________________________________________
 TOTAL: 32
 

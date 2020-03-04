@@ -361,17 +361,6 @@ body,
 	&.alt{
 		background:$gray-300;
 	}
-	&.fixtures{
-		padding:70px 0 80px;
-		color:#fff;
-		background:#d6000c;
-		@include media("<desktop") {
-			padding:50px 0;
-		}
-	}
-	@include media("<tablet") {
-		padding:30px 0;
-	}
 }
 .bg-holder{
 	position:absolute;
@@ -679,6 +668,238 @@ body,
 		@include media("<tablet") {
 			font-size:18px;
 			line-height:20px;
+		}
+	}
+}
+.fixtures{
+	padding:70px 0 80px;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	background:#d6000c;
+	@include media("<desktop") {
+		padding:50px 0;
+	}
+	@include media("<tablet") {
+		padding:30px 0;
+	}
+	h1{
+		margin:0;
+		font-size:28px;
+		line-height:32px;
+		font-weight:bold;
+		color:#fff;
+		text-transform:uppercase;
+		letter-spacing:-.00607em;
+		@include media("<tablet") {
+			font-size:20px;
+			line-height:23px;
+		}
+	}
+	.title-row{
+		padding:0 0 70px;
+		@include media("<tablet") {
+			padding:0 0 40px;
+		}
+		.container{
+			display:flex;
+			justify-content:space-between;
+			@include media("<phone") {
+				flex-direction:column;
+			}
+		}
+	}
+	.tabs-nav{
+		ul{
+			overflow:hidden;
+			margin:0 0 0 -5px;
+			@include media("<phone") {
+				padding:20px 0 0;
+			}
+		}
+		li{
+			float:left;
+			padding:0 10px 0 0;
+			&:before{
+				display:none;
+			}
+		}
+		a{
+			display:block;
+			position:relative;
+			padding:10px 5px;
+			font-size:14px;
+			line-height:16px;
+			font-weight:bold;
+			color:#000;
+			text-transform:uppercase;
+			transition:color .25s cubic-bezier(.455,.03,.515,.955);
+			&:before{
+				position:absolute;
+				content:"";
+				left:0;
+				bottom:5px;
+				width:100%;
+				height:2px;
+				background:#fff;
+				transform:scale(0, 1);
+				transform-origin:0 50%;
+				transition:transform .25s cubic-bezier(.455,.03,.515,.955);
+			}
+			&:hover{
+				color:#fff;
+				&:before{
+					transform:scale(1, 1);
+				}
+			}
+		}
+	}
+	.fixtures-wrapper{
+		text-align:center;
+		.container{
+			@include media("<desktop") {
+				width:458px;
+			}
+		}
+	}
+	.fixtures-col{
+		display:flex;
+		flex-direction:column;
+		padding:41px 15px;
+		color:#000;
+		background:#fff;
+		@include media("<desktop") {
+			padding:20px 15px;
+		}
+		@include media("<tablet") {
+			padding:8px;
+		}
+	}
+	.fixtures-col-center{
+	    align-items:center;
+		background:#eaece7;
+	}
+	.fixtures-team{
+		display:flex;
+		align-items:center;
+		margin:auto 0;
+	}
+	.fixtures-team-right{
+		@include media("≥widescreen") {
+			flex-direction:row-reverse;
+		}
+	}
+	.fixtures-team-name{
+		flex:1 1 auto;
+		display:block;
+		font-size:28px;
+		line-height:32px;
+		font-weight:600;
+		text-align:center;
+		text-transform:uppercase;
+		letter-spacing:-.00607em;
+		@include media("<widescreen") {
+			font-size:24px;
+			line-height:28px;
+		}
+		@include media("<tablet") {
+			font-size:20px;
+			line-height:23px;
+		}
+	}
+	.fixtures-team-logo{
+		flex:0 1 auto;
+		padding-right:15px;
+		padding-left:10px;
+		font-size:0;
+		text-align:center;
+		@include media("<tablet") {
+			flex-basis:70px;
+		}
+	}
+	.fixtures-title{
+		display:block;
+		padding:0 0 10px;
+		font-size:24px;
+		line-height:27px;
+		font-weight:bold;
+		@include media("<tablet") {
+			padding:0 0 3px;
+			font-size:14px;
+			line-height:16px;
+		}
+	}
+	.fixtures-place{
+		font-size:16px;
+		line-height:18px;
+		font-weight:500;
+		@include media("<tablet") {
+			font-size:14px;
+			line-height:16px;
+		}
+	}
+	.btn.btn-lg{
+		padding:30px;
+		font-size:16px;
+		line-height:19px;
+		font-weight:bold;
+		color:#000;
+		text-transform:uppercase;
+		@include media("<tablet") {
+			padding:22px;
+			font-size:14px;
+		}
+	}
+	.fixtures-all-link{
+		padding:30px 0 0;
+		@include media("<tablet") {
+			padding-top:20px;
+		}
+		.more-link{
+			display:inline-flex;
+			vertical-align:baseline;
+			align-items:baseline;
+			position:relative;
+			padding-right:10px;
+			font-size:0;
+			line-height:0;
+			font-weight:bold;
+			color:#fff;
+			text-transform:uppercase;
+			transition:.25s cubic-bezier(.455,.03,.515,.955);
+			&:hover{
+				color:$warning;
+				.ico{
+					transform:translate(3px,-55%);
+				}
+			}
+			span{
+				display:inline-block;
+				font-size:16px;
+				line-height:18px;
+				letter-spacing:.03125em;
+				@include media("<tablet") {
+					font-size:13px;
+					line-height:14px;
+				}
+			}
+			.ico{
+				position:absolute;
+				top:50%;
+				right:0;
+				width:.57em;
+				height:1em;
+				font-size:13.5px;
+				-webkit-transform:translate(0,-55%);
+				-ms-transform:translate(0,-55%);
+				transform:translate(0,-55%);
+				will-change:transform;
+				fill:currentColor;
+				transition:transform .25s cubic-bezier(.455,.03,.515,.955);
+				@include media("<tablet") {
+					width:7px;
+					height:12px;
+				}
+			}
 		}
 	}
 }

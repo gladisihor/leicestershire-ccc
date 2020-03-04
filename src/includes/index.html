@@ -151,8 +151,8 @@
 				</div>
 			</section>
 			<section class="section fixtures" aria-label="Fixtures">
-				<div class="container">
-					<header class="title-row">
+				<header class="title-row">
+					<div class="container">
 						<h1>Next match</h1>
 						<nav class="tabs-nav">
 							<ul>
@@ -160,8 +160,10 @@
 								<li><a href="/fixtures.html">results</a></li>
 							</ul>
 						</nav>
-					</header>
-					<div class="fixtures-wrapper">
+					</div>
+				</header>
+				<div class="fixtures-wrapper">
+					<div class="container">
 						<div class="row no-gutters" itemscope itemtype="http://schema.org/SportsEvent">
 							<meta itemprop="startDate" content="2020-03-06T19:35:00+00:00">
 							<span itemprop="location" itemscope itemtype="https://schema.org/Place">
@@ -169,12 +171,12 @@
 								<meta itemprop="address" content="Newport">
 							</span>
 							<meta itemprop="name" content="DRAGONS vs Benetton Rugby">
-							<div class="col-12 col-lg-4 fixtures__col">
+							<div class="col-12 col-lg-4 fixtures-col">
 								<div class="fixtures-team" itemprop="homeTeam" itemscope itemtype="https://schema.org/SportsTeam">
 									<meta itemprop="logo" content="https://res.cloudinary.com/dragons/image/upload/v1547512595/assets/team_crests/dragons.png">
 									<meta itemprop="sport" content="Rubgy">
-									<div class="fixtures-team__name" itemprop="name">Dragons</div>
-									<div class="fixtures-team__logo">
+									<strong class="fixtures-team-name" itemprop="name">Dragons</strong>
+									<div class="fixtures-team-logo">
 										<picture alt="image" aria-label="Dragons logo">
 											<!-- 1200 +-->
 											<source media="(min-width: 1200px)" srcset="https://res.cloudinary.com/dragons/image/upload/w_100/v1547512595/assets/team_crests/dragons.png 1x, https://res.cloudinary.com/dragons/image/upload/w_200/v1547512595/assets/team_crests/dragons.png 2x">
@@ -187,18 +189,16 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-lg-4 fixtures__col fixtures__col--center">
-								<div class="fixtures__scope">
-									<div class="fixtures__title" aria-label="Match date">Friday March 06 <br>KO 7:35 PM</div>
-									<div class="fixtures__place" aria-label="Match place">GP14<br>Rodney Parade,<br>Newport</div>
-								</div>
+							<div class="col-12 col-lg-4 fixtures-col fixtures-col-center">
+								<strong class="fixtures-title" aria-label="Match date">Friday March 06 <br>KO 7:35 PM</strong>
+								<div class="fixtures-place" aria-label="Match place">GP14<br>Rodney Parade,<br>Newport</div>
 							</div>
-							<div class="col-12 col-lg-4 fixtures__col">																							
-								<div class="fixtures-team fixtures-team--right" itemprop="awayTeam" itemscope itemtype="https://schema.org/SportsTeam">
+							<div class="col-12 col-lg-4 fixtures-col">																							
+								<div class="fixtures-team fixtures-team-right" itemprop="awayTeam" itemscope itemtype="https://schema.org/SportsTeam">
 									<meta itemprop="logo" content="https://res.cloudinary.com/dragons/image/upload/v1547512595/assets/team_crests/benetton_rugby.png">
 									<meta itemprop="sport" content="Rubgy">
-									<div class="fixtures-team__name" itemprop="name">Benetton Rugby</div>
-									<div class="fixtures-team__logo">
+									<strong class="fixtures-team-name" itemprop="name">Benetton Rugby</strong>
+									<div class="fixtures-team-logo">
 										<picture alt="image" aria-label="Benetton Rugby logo">
 											<!-- 1200 +-->
 											<source media="(min-width: 1200px)" srcset="https://res.cloudinary.com/dragons/image/upload/w_100/v1547512595/assets/team_crests/benetton_rugby.png 1x, https://res.cloudinary.com/dragons/image/upload/w_200/v1547512595/assets/team_crests/benetton_rugby.png 2x">
@@ -211,18 +211,19 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-12 offset-lg-4 col-lg-4">
-							<div class="fixtures__cta">
-								<a class="btn btn-big" href="https://www.dragonsrugby.wales/Tickets">Get tickets</a><div class="fixtures__all-link">
-								<a class="more-link more-link--white" href="/fixtures.html">
-									<span>See all fixtures</span>
-									<svg class="ico ico-arrow-right">
-										<use xlink:href="images/sprite.svg#ico-arrow-right"></use>
-									</svg>
-								</a>
+							<div class="col-12 offset-lg-4 col-lg-4">
+								<div class="fixtures-cta">
+									<a class="btn btn-lg btn-warning btn-block rounded-0" href="https://www.dragonsrugby.wales/Tickets">Get tickets</a>
+									<div class="fixtures-all-link">
+										<a class="more-link more-link-white" href="/fixtures.html">
+											<span>See all fixtures</span>
+											<svg class="ico ico-arrow-right">
+												<use xlink:href="images/sprite.svg#ico-arrow-right"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
 							</div>
-						</div>
 						</div>
 					</div>
 				</div>
