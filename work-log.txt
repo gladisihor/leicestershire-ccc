@@ -25,7 +25,7 @@
 04-Mar-2020 - Added fixtures section layout;
 	    - Stylized fixtures section (1h)
 __________________________________________________________________________________________
-TOTAL: 32
+TOTAL: 33
 
 
 
