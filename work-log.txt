@@ -22,16 +22,17 @@
 	    - Implemented and stylized compressed header on scroll (2h)
 02-Mar-2020 - Players list has been stylized;
 	    - Self checking, small fixes (1h)
-04-Mar-2020 - Added fixtures section layout;
-	    - Stylized fixtures section (1h)
+04-Mar-2020 - Added fixtures section layout
+	    - Stylized fixtures section (1h);
+24-Mar-2020 - Fixtures list page has been created (1h);
 __________________________________________________________________________________________
-TOTAL: 33
+TOTAL: 34
 
 
 
 
 "Home page, news list and detail, article, player list and detail, maybe shop bits (there’s a basket and checkout shop home and common detail)"
-DONE: Home page, article, news list & single page, 404 page
+DONE: Home page, article, news list & single page, 404 page, Fixtures list page 
 
 
 - logo fixes for Home page + 

@@ -8270,10 +8270,19 @@ body,
       color: #000;
       transition: color 0.15s ease-in-out; }
   .main .filters {
-    margin: 0 -5px;
-    padding: 0 0 25px; }
+    margin: 0 -5px 25px;
+    padding: 0; }
+    .main .filters.download-fixtures .btn-outline-secondary {
+      padding: 6px 10px;
+      font-size: 17px;
+      line-height: 19px;
+      color: #922f2f; }
+      .main .filters.download-fixtures .btn-outline-secondary:focus {
+        color: #922f2f; }
+      .main .filters.download-fixtures .btn-outline-secondary:hover {
+        color: #fff; }
     .main .filters > li {
-      padding: 0 5px 10px; }
+      padding: 0 5px 5px; }
       .main .filters > li:before {
         display: none; }
     .main .filters .btn.btn-sm, .main .filters .btn-group-sm > .btn {
@@ -8289,6 +8298,59 @@ body,
       font: 12px/18px Arial, Helvetica, sans-serif; }
     .main .pagination span.page-link {
       background: #fff; }
+  .main .list-group {
+    margin: 0 0 20px; }
+    .main .list-group .list-group-item {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      padding: 10px 15px;
+      font: 17px/24px Arial, Helvetica, sans-serif;
+      color: #000; }
+      .main .list-group .list-group-item.active {
+        color: #fff;
+        border-color: #444;
+        background: #444; }
+        .main .list-group .list-group-item.active h3 {
+          margin: 0; }
+      .main .list-group .list-group-item.fixture .list-group-item-heading {
+        max-width: 450px;
+        padding: 0 0 5px; }
+    .main .list-group .list-group-item-heading {
+      color: inherit; }
+    .main .list-group h3 {
+      font-size: 18px;
+      line-height: 24px; }
+    .main .list-group h4 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 26px; }
+    .main .list-group i {
+      color: #a39d9d; }
+    .main .list-group address {
+      display: inline;
+      margin: 0; }
+    .main .list-group .event-date {
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      width: 50px;
+      margin-right: 12px;
+      padding-right: 8px;
+      font: 14px/15px "Roboto Condensed", Arial, Helvetica, sans-serif;
+      color: #767676;
+      text-align: center;
+      text-transform: uppercase;
+      border-right: 1px solid #ddd; }
+      .main .list-group .event-date em {
+        font-style: normal; }
+      .main .list-group .event-date .orn {
+        font-size: 30px;
+        line-height: 33px;
+        font-weight: bold;
+        letter-spacing: -2px; }
+    .main .list-group .info {
+      font-weight: 300; }
 
 .page-header {
   margin: 0 0 20px;
