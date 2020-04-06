@@ -330,6 +330,13 @@ body,
 					top:245px;
 				}
 			}
+			h3{
+				font-size:26px;
+				line-height:29px;
+			}
+			.price{
+				font-size:18px;
+			}
 		}
 		&.item-size-wider{
 			a{
@@ -341,6 +348,13 @@ body,
 				@include media("≥desktop") {
 					top:418px;
 				}
+			}
+			h3{
+				font-size:26px;
+				line-height:29px;
+			}
+			.price{
+				font-size:18px;
 			}
 		}
 	}
@@ -388,10 +402,12 @@ body,
 		top:72px;
 		max-width:100%;
 	}
-	time{
+	time,
+	.price{
 		float:left;
 		clear:both;
 		padding:3px 6px;
+		font-style:normal;
 		text-transform:uppercase;
 		background:#d3190f;
 	}
