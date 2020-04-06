@@ -25,8 +25,9 @@
 04-Mar-2020 - Added fixtures section layout
 	    - Stylized fixtures section (1h);
 24-Mar-2020 - Fixtures list page has been created (1h);
+06-Apr-2020 - Shop page has been created (2h);
 __________________________________________________________________________________________
-TOTAL: 34
+TOTAL: 36
 
 
 

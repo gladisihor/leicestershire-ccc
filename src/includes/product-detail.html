@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+@@include("templates/head.html")
+<body>
+	<div class="wrapper">
+		@@include("templates/header.html", {
+			"logosrcd": "images/logo01.png",
+			"logosrcm": "images/logo-small01.png",
+			"width": "220",
+			"alt": "Leicestershire Country Cricket Club. Established 1879"
+		})
+		<main class="main">
+			<section class="section">
+				<div class="container">
+					<div class="top-breadcrumbs-panel row no-gutters justify-content-between">
+						<nav aria-label="breadcrumb col-12 col-md-auto">
+							<ol class="breadcrumb small">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item"><a href="#">Store</a></li>
+								<li class="breadcrumb-item active" aria-current="page">LCCC White Cap</li>
+							</ol>
+						</nav>
+						<div class="basket-meta col-12 col-md-auto">
+							<a href="/shopping-basket.html">
+								<span>1 Item(s)</span>
+								<span class="separator">|</span>
+								<span>£12.00</span>
+								<i class="fa fa-shopping-cart"></i>
+							</a>
+						</div>
+					</div>
+					<h1>Page title</h1>
+					Content
+				</div>
+			</section>
+			@@include("templates/sponsors.html")
+		</main>
+		@@include("templates/footer.html")
+	</div>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js" defer></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" defer></script>
+	<script type="text/javascript" src="js/jquery.main.js" defer></script>
+</body>
+</html>
