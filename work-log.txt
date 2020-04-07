@@ -22,11 +22,12 @@
 	    - Implemented and stylized compressed header on scroll (2h)
 02-Mar-2020 - Players list has been stylized;
 	    - Self checking, small fixes (1h)
-04-Mar-2020 - Added fixtures section layout
-	    - Stylized fixtures section (1h);
-24-Mar-2020 - Fixtures list page has been created (1h);
-06-Apr-2020 - Shop page has been created (2h);
-07-Apr-2020 - Product details page has been created (3h);
+04-Mar-2020 - Added fixtures section layout;
+	    - Stylized fixtures section (1h)
+24-Mar-2020 - Fixtures list page has been created (1h)
+06-Apr-2020 - Shop page has been created (2h)
+07-Apr-2020 - Product details page has been created;
+	    - Basket page has been created (4h)
 __________________________________________________________________________________________
 TOTAL: 36
 
