@@ -12927,6 +12927,10 @@ body,
 		width: 7px;
 		height: 12px;
 	}
+
+	.product-gallery {
+		margin-bottom: 30px;
+	}
 }
 
 @media (max-width: 575.98px) {

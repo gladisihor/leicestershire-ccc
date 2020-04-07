@@ -9086,6 +9086,10 @@ body,
       font-weight: normal;
       color: #3e4d5c; }
 
+@media (max-width: 767px) {
+  .product-gallery {
+    margin-bottom: 30px; } }
+
 .product-gallery ul {
   margin: 0;
   padding: 0;

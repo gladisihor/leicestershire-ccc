@@ -1127,6 +1127,9 @@ body,
 	}
 }
 .product-gallery{
+	@include media("<tablet") {
+		margin-bottom:30px;
+	}
 	ul{
 		margin:0;
 		padding:0;
