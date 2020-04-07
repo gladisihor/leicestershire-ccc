@@ -29,8 +29,41 @@
 							</a>
 						</div>
 					</div>
-					<h1>Page title</h1>
-					Content
+					<div class="product-details row" itemscope itemtype="http://schema.org/Product">
+						<div class="col-md-6 col-lg-8">
+							<div class="product-gallery">
+								<ul class="slides">
+									<li><img itemprop="image" src="images/img32.jpg" alt="image description"></li>
+									<li><img itemprop="image" src="images/img33.jpg" alt="image description"></li>
+									<li><img itemprop="image" src="images/img34.jpg" alt="image description"></li>
+								</ul>
+								<ul class="gallery-pagination">
+									<li><img src="images/img32-thumb.jpg" alt="image description"></li>
+									<li><img src="images/img33-thumb.jpg" alt="image description"></li>
+									<li><img src="images/img34-thumb.jpg" alt="image description"></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<h1><span itemprop="brand">LCCC</span> <span itemprop="name">White Cap</span></h1>
+							<div class="details-row price-row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+								<strong class="price">
+									<em>£</em><span itemprop="price">12.00</span>
+									<meta itemprop="priceCurrency" content="Pound">
+								</strong>
+								<span class="availability">
+									<link itemprop="availability" href="http://schema.org/InStock">
+									Availability: <strong>InStock</strong>
+								</span>
+							</div>
+							<div class="details-row description" itemprop="description">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ut tempore, obcaecati ex quidem. Porro maiores hic dicta vitae sit.</p>
+							</div>
+							<div class="details-row product-page-options">
+								<button class="btn btn-primary" type="button" id="addcart" data-loading-text="Adding...">Add to cart</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			@@include("templates/sponsors.html")

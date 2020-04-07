@@ -26,6 +26,7 @@
 	    - Stylized fixtures section (1h);
 24-Mar-2020 - Fixtures list page has been created (1h);
 06-Apr-2020 - Shop page has been created (2h);
+07-Apr-2020 - Product details page has been created (3h);
 __________________________________________________________________________________________
 TOTAL: 36
 
@@ -40,3 +41,9 @@ DONE: Home page, article, news list & single page, 404 page, Fixtures list page
 - Home page banners list bug +
 - compress the header on scroll ( https://www.weareyoung.org.uk/index.html ) +
 - logo replacements ( whole, each of these: https://res.cloudinary.com/trentbridge/image/upload/f_auto,q_auto/v1579083059/crests/cc_2017.png ) +
+
+
+img32.jpg img32-thumb.jpg
+img33.jpg img33-thumb.jpg
+img34.jpg img34-thumb.jpg
+3670x2065
