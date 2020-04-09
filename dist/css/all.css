@@ -7094,6 +7094,11 @@ button {
 	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+a:disabled,
+button:disabled {
+	pointer-events: none;
+}
+
 img {
 	vertical-align: top;
 	max-width: 100%;
@@ -7169,6 +7174,11 @@ body,
 .main p {
 	margin: 0 0 10px;
 	font-weight: 300;
+}
+
+.main p.lead {
+	margin-bottom: 20px;
+	font-size: 1.25em;
 }
 
 .main p strong {
@@ -8252,6 +8262,73 @@ body,
 
 .product-gallery .gallery-pagination > li.active {
 	box-shadow: 0 0 0 3px #e42313;
+}
+
+.checkout-page {
+	font: 19px/25px Arial, Helvetica, sans-serif;
+}
+
+.checkout-page h2.card-header {
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: normal;
+	color: #fff;
+	border: 0;
+	background: #a7b0b8;
+}
+
+.checkout-page h2.card-header a {
+	color: inherit;
+}
+
+.checkout-page .card-content {
+	max-width: 946px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.checkout-page label,
+.checkout-page .label {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.checkout-page .input-group > .validator {
+	-ms-flex: 1 1 0%;
+	flex: 1 1 0%;
+}
+
+.checkout-page .input-group > .validator:first-child > .form-control:only-child {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.checkout-page .input-group > .validator:last-child > .form-control:only-child {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.validator.validator-email.validation-none .feedback,
+.validator.validator-email.validation-yes .feedback,
+.validator.validator-email.validation-yes-fallback .feedback,
+.validator.validator-email.validation-no .feedback,
+.validator.validator-email.validation-no-fallback .feedback,
+.validator.validator-email.validation-maybe .feedback,
+.validator.validator-email.validation-maybe-fallback .feedback {
+	position: absolute;
+	font-size: smaller;
+	display: block;
+	padding: 0;
+	height: 100%\9;
+	border-radius: 50%;
+	top: -5px;
+	color: #fff;
+	transition: background-color .35s ease;
+	right: 5px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
 }
 
 /*# sourceMappingURL=all.css.map */

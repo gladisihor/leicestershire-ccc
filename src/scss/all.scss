@@ -41,6 +41,9 @@ button{
 				background-color $animation-speed $animation-effect,
 				border-color $animation-speed $animation-effect,
 				box-shadow $animation-speed $animation-effect;
+	&:disabled{
+		pointer-events:none;
+	}
 }
 img{
 	vertical-align:top;
@@ -121,6 +124,10 @@ body,
 	p{
 		margin:0 0 10px;
 		font-weight:300;
+		&.lead{
+			margin-bottom:20px;
+			font-size:1.25em;
+		}
 		strong{
 			font-weight:bold;
 		}
@@ -1178,4 +1185,71 @@ body,
 			}
 		}
 	}
+}
+.checkout-page{
+	font:19px/25px $font-family-alt;
+	h2.card-header{
+		font-size:17px;
+		line-height:20px;
+		font-weight:normal;
+		color:#fff;
+		border:0;
+		background:#a7b0b8;
+		a{
+			color:inherit;
+		}
+	}
+	.card-content{
+		max-width:946px;
+		font-size:14px;
+		line-height:20px;
+	}
+	label,
+	.label{
+		display:inline-block;
+		margin-bottom:10px;
+		font-weight:bold;
+	}
+	.input-group{
+		>.validator{
+			flex:1 1 0%;
+			&:first-child{
+				>.form-control{
+					&:only-child{
+						border-top-right-radius:0;
+						border-bottom-right-radius:0;
+					}
+				}
+			}
+			&:last-child{
+				>.form-control{
+					&:only-child{
+						border-top-left-radius:0;
+						border-bottom-left-radius:0;
+					}
+				}
+			}
+		}
+	}
+}
+.validator.validator-email.validation-none .feedback,
+.validator.validator-email.validation-yes .feedback,
+.validator.validator-email.validation-yes-fallback .feedback,
+.validator.validator-email.validation-no .feedback,
+.validator.validator-email.validation-no-fallback .feedback,
+.validator.validator-email.validation-maybe .feedback,
+.validator.validator-email.validation-maybe-fallback .feedback{
+	position:absolute;
+	font-size:smaller;
+	display:block;
+	padding:0;
+	height:100%\9;
+	border-radius:50%;
+	top:-5px;
+	color:#fff;
+	transition:background-color .35s ease;
+	right:5px;
+	text-align:center;
+	font-family:$font-family-alt;
+	display:inline-block;
 }

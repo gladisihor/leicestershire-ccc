@@ -28,8 +28,9 @@
 06-Apr-2020 - Shop page has been created (2h)
 07-Apr-2020 - Product details page has been created;
 	    - Basket page has been created (4h)
+08-Apr-2020 - Checkout page has been created (2h)
 __________________________________________________________________________________________
-TOTAL: 36
+TOTAL: 41
 
 
 
