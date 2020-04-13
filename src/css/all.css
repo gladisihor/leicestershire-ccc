@@ -8381,6 +8381,13 @@ body,
   @media (min-width: 992px) {
     .news-list {
       display: block; } }
+  @media (max-width: 991px) {
+    .news-list.height-auto-tablet a {
+      height: auto; } }
+  @media (max-width: 991px) {
+    .news-list.height-auto-tablet .caption {
+      top: auto;
+      bottom: 25px; } }
   .news-list .news-item {
     position: relative;
     padding: 0 6px 20px; }

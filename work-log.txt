@@ -29,6 +29,7 @@
 07-Apr-2020 - Product details page has been created;
 	    - Basket page has been created (4h)
 08-Apr-2020 - Checkout page has been created (2h)
+13-Apr-2020 - Items height was adjusted (0.5h)
 __________________________________________________________________________________________
 TOTAL: 41
 

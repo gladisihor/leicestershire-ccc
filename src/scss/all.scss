@@ -323,6 +323,19 @@ body,
 	@include media("≥desktop") {
 		display:block;
 	}
+	&.height-auto-tablet{
+		a{
+			@include media("<desktop") {
+				height:auto;
+			}
+		}
+		.caption{
+			@include media("<desktop") {
+				top:auto;
+				bottom:25px;
+			}
+		}
+	}
 	.news-item{
 		position:relative;
 		padding:0 6px 20px;

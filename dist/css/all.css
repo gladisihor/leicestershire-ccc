@@ -12837,6 +12837,15 @@ body,
 		line-height: 32px;
 	}
 
+	.news-list.height-auto-tablet a {
+		height: auto;
+	}
+
+	.news-list.height-auto-tablet .caption {
+		top: auto;
+		bottom: 25px;
+	}
+
 	.sidebar h3 {
 		font-size: 29px;
 		line-height: 32px;
