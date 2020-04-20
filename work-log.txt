@@ -30,8 +30,9 @@
 	    - Basket page has been created (4h)
 08-Apr-2020 - Checkout page has been created (2h)
 13-Apr-2020 - Items height was adjusted (0.5h)
+20-Apr-2020 - Modal window has been created (0.5h)
 __________________________________________________________________________________________
-TOTAL: 41
+TOTAL: 41.5
 
 
 

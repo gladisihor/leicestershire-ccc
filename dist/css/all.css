@@ -8290,7 +8290,7 @@ body,
 .checkout-page label,
 .checkout-page .label {
 	display: inline-block;
-	margin-bottom: 10px;
+	margin: 10px 0;
 	font-weight: bold;
 }
 
@@ -8329,6 +8329,14 @@ body,
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 	display: inline-block;
+}
+
+.modal-content {
+	font: 16px/20px Arial, Helvetica, sans-serif;
+}
+
+.modal-content p:last-child {
+	margin: 0;
 }
 
 /*# sourceMappingURL=all.css.map */

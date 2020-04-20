@@ -1245,11 +1245,11 @@
 									<div class="row no-gutters justify-content-center justify-content-md-end align-items-center">
 										<div class="form-check">
 											<label>
-												<input type="checkbox" name="chktac" id="chktac" class="form-check-input">
+												<input checked type="checkbox" name="chktac" id="chktac" class="form-check-input">
 												<span class="form-check-label"> I have read and agree to the <a title="Terms &amp; Conditions" href="#" data-toggle="modal" data-target="#tacModal">Terms &amp; Conditions </a> &nbsp;&nbsp;&nbsp;</span>
 											</label>
 										</div>
-										<button class="btn btn-success btn-lg" type="button" id="button-confirm" disabled>Confirm Order</button>
+										<button data-toggle="modal" data-target="#success-order-notification" class="btn btn-success btn-lg" type="button" id="button-confirm">Confirm Order</button>
 									</div>
 								</div>
 							</div>
@@ -1403,6 +1403,25 @@
 		</div>
 	</div>
 </footer>
+	</div>
+	<div class="modal fade" id="success-order-notification" tabindex="-1" role="dialog" aria-labelledby="#success-order-notification-label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="#success-order-notification-label">Success</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Your order was successfully confirmed!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success btn-sm" data-dismiss="modal">GO TO BASKET</button>
+					<button type="button" class="btn btn-info btn-sm">CONTINUE SHOPPING</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js" defer></script>
 	<script type="text/javascript" src="js/bootstrap.min.js" defer></script>
