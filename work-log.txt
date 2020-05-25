@@ -31,8 +31,9 @@
 08-Apr-2020 - Checkout page has been created (2h)
 13-Apr-2020 - Items height was adjusted (0.5h)
 20-Apr-2020 - Modal window has been created (0.5h)
+25-May-2020 - Product image zoom and carousel compatibility. Other small updates and discussions (4h)
 __________________________________________________________________________________________
-TOTAL: 41.5
+TOTAL: 45.5
 
 
 
