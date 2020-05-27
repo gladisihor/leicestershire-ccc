@@ -19,7 +19,11 @@
 			}
 		}
 		.logo{
-			transform:translateY(5px) scale(0.55);
+			transform:translate(0, 5px) scale(0.55);
+			@include media("<phone") {
+				left:50%;
+				transform:translate(-34px, 5px) scale(0.55);
+			}
 		}
 		.header-bar{
 			margin-top:-21px;
@@ -62,7 +66,7 @@
 	position:absolute;
 	top:0;
 	transform:translateY(5px);
-	transition:transform $animation-speed $animation-effect;
+	transition:transform $animation-speed $animation-effect, left $animation-speed $animation-effect;
 	transform-origin:0 0;
 	@include media("<desktop") {
 		z-index:13;
@@ -70,7 +74,9 @@
 	}
 	@include media("<phone") {
 		z-index:2;
-		width:63px;
+		top:2px;
+		left:10px;
+		width:124px;
 		overflow:hidden;
 		margin-left:-4px;
 	}
@@ -82,7 +88,7 @@
 	@include media("<phone") {
 		position:relative;
 		z-index:2;
-		padding:0 0 0 72px;
+		padding:0 0 0 122px;
 		text-align:left;
 	}
 	.phone-link{
@@ -96,12 +102,16 @@
 		}
 		@include media("<phone") {
 			margin:0 0 4px;
+			font-size:15px;
 		}
 		i{
 			margin-right:3px;
 			font-size:21px;
 			line-height:1;
 			color:$brand-color-alt;
+			@include media("<phone") {
+				font-size:19px;
+			}
 		}
 	}
 	.social-networks{
@@ -122,6 +132,7 @@
 			line-height:1;
 			@include media("<phone") {
 				padding-bottom:6px;
+				font-size:19px;
 			}
 		}
 	}

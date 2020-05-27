@@ -6731,7 +6731,7 @@ a.text-dark:focus {
 }
 
 .header.compressed .logo {
-	transform: translateY(5px) scale(0.55);
+	transform: translate(0, 5px) scale(0.55);
 }
 
 .header.compressed .header-bar {
@@ -6755,7 +6755,7 @@ a.text-dark:focus {
 	position: absolute;
 	top: 0;
 	transform: translateY(5px);
-	transition: transform 0.15s ease-in-out;
+	transition: transform 0.15s ease-in-out, left 0.15s ease-in-out;
 	transform-origin: 0 0;
 }
 
@@ -13103,13 +13103,20 @@ body,
 }
 
 @media (max-width: 479px) {
+	.header.compressed .logo {
+		left: 50%;
+		transform: translate(-34px, 5px) scale(0.55);
+	}
+
 	.header .container {
 		padding-top: 13px;
 	}
 
 	.logo {
 		z-index: 2;
-		width: 63px;
+		top: 2px;
+		left: 10px;
+		width: 124px;
 		overflow: hidden;
 		margin-left: -4px;
 	}
@@ -13117,16 +13124,22 @@ body,
 	.header-bar {
 		position: relative;
 		z-index: 2;
-		padding: 0 0 0 72px;
+		padding: 0 0 0 122px;
 		text-align: left;
 	}
 
 	.header-bar .phone-link {
 		margin: 0 0 4px;
+		font-size: 15px;
+	}
+
+	.header-bar .phone-link i {
+		font-size: 19px;
 	}
 
 	.header-bar .social-networks li {
 		padding-bottom: 6px;
+		font-size: 19px;
 	}
 
 	.navbar-toggler {
@@ -13143,7 +13156,7 @@ body,
 	}
 
 	.main {
-		padding-top: 89px;
+		padding-top: 88px;
 	}
 
 	.fixtures .title-row .container {
